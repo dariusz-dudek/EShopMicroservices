@@ -1,8 +1,39 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{1D67A6F0-6124-4B23-978E-9937C02961B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{11279A46-06FD-4D5D-865C-87FB6207D3F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.API", "Services\Catalog\Catalog.API\Catalog.API.csproj", "{1919C557-A8BF-4EFF-9D37-5C6F5DBD9300}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{7AC4A29E-5873-4330-AB7E-8D3DB5D47F77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks", "BuildingBlocks\BuildingBlocks\BuildingBlocks.csproj", "{9176218D-2705-4DCC-81FC-EAC135E38C12}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{897F6FA7-8655-45E9-AC1F-8710EE5296A8}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		docker-compose.override.yml = docker-compose.override.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{11279A46-06FD-4D5D-865C-87FB6207D3F9} = {1D67A6F0-6124-4B23-978E-9937C02961B0}
+		{1919C557-A8BF-4EFF-9D37-5C6F5DBD9300} = {11279A46-06FD-4D5D-865C-87FB6207D3F9}
+		{9176218D-2705-4DCC-81FC-EAC135E38C12} = {7AC4A29E-5873-4330-AB7E-8D3DB5D47F77}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1919C557-A8BF-4EFF-9D37-5C6F5DBD9300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1919C557-A8BF-4EFF-9D37-5C6F5DBD9300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1919C557-A8BF-4EFF-9D37-5C6F5DBD9300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1919C557-A8BF-4EFF-9D37-5C6F5DBD9300}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9176218D-2705-4DCC-81FC-EAC135E38C12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9176218D-2705-4DCC-81FC-EAC135E38C12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9176218D-2705-4DCC-81FC-EAC135E38C12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9176218D-2705-4DCC-81FC-EAC135E38C12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
