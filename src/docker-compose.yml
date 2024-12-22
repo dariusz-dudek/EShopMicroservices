@@ -1,6 +1,10 @@
 ﻿services:
   catalogdb:
     image: postgres
+    
+  basketdb:
+    image: postgres
+    
   catalog.api:
     image: catalog.api
     build:
@@ -8,5 +12,6 @@
       dockerfile: Services/Catalog/Catalog.API/Dockerfile
 volumes:
   postgres_catalog:
+  postgres_basket:
 
   
