@@ -1,3 +1,4 @@
+using BuildingBlocks.Messaging.MassTransit;
 using Discount.Grpc;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -44,6 +45,9 @@ builder.Services.AddGrpcClient<DiscountProtoService.DiscountProtoServiceClient>(
 
     return handler;
 });
+
+//Async Comunication Services
+builder.Services.AddMessageBroker(builder.Configuration);
 
 // Cross-Cuttng Servises
 builder.Services.AddExceptionHandler<CustomExceptionHandler>();
